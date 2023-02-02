@@ -1,0 +1,107 @@
+:root {
+    --fonte-principal:'Unbounded', cursive;
+    --cinza-fonte: #DCDCDC;
+    --verde-secundario: rgb(142, 214, 26);
+    --azul-principal:#87CEEB;
+    --azul-secundario:#48D1CC;
+    --branco-principal:#FFFFFF;
+}
+body {
+    background: url(img/background-body);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.conteudo {
+    height: 65vh;
+    width: 60%;
+    margin: 10% auto;
+}
+.superior {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: var(--branco-principal);
+}
+.secao-a {
+    padding: 3rem 5rem 3rem 2rem;
+    font-family: var(--fonte-principal);
+}
+.secao-a__titulo {
+    color: var(--azul-secundario);
+    padding: 0 0 2rem;
+    font-size: 2rem;   
+    font-weight: bold;  
+}
+.secao-a__subtitulo {
+    color: var(--verde-secundario);
+    padding: 0 0 1rem 0;
+    font-size: 1.4rem;
+}
+.secao-a__paragrafo { 
+    color: var(--cinza-fonte);
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+.inferior {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.secao-b {  
+    padding: 2rem 3rem 6rem 2rem;
+    background:var(--azul-secundario);
+    color: var(--branco-principal);
+    border-bottom-left-radius: 20px;
+    position: relative;
+}
+.secao-b__titulo {
+    font-size: 2rem;
+    padding: 0 0 2rem 0;
+}
+.secao-b__subtitulo strong{
+    font-size: 2.3rem;
+    color: var(--branco-principal);
+    padding: 0 0.6rem 0 0;
+}
+.secao-b__subtitulo {
+    color: var(--cinza-fonte);  
+    padding: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+.secao-b__paragrafo {
+    font-size: 1.5rem;       
+    padding: 0 0 2rem 0;
+}
+.secao-b__botao {
+    width: 80%;
+    height: 20%;
+    background: var(--verde-secundario); 
+    border: none;
+    border-radius: 5px;
+    color: var(--branco-principal);
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: 1s ease-in-out;
+    position: absolute;
+}
+.secao-b__botao:hover   {
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 2.1rem;
+    height: 25%
+}
+.secao-c {
+    padding-bottom: 0px;
+    background: var(--azul-principal);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius:20px
+}
+.secao-c__titulo{
+    padding: 0 0 1.5rem 0;
+    font-size: 2.2rem;
+}
+.secao-c__paragrafo {  
+
+    padding: 0 0 0.5rem 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
