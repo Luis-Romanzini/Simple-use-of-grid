@@ -12,9 +12,9 @@ body {
     background-size: cover;
 }
 .conteudo {
-    height: 65vh;
+    height: 100vh;
     width: 60%;
-    margin: 10% auto;
+    margin: 10% auto 0 auto;
 }
 .superior {
     border-top-left-radius: 20px;
@@ -99,9 +99,29 @@ body {
     padding: 0 0 1.5rem 0;
     font-size: 2.2rem;
 }
-.secao-c__paragrafo {  
-
+.secao-c__paragrafo {   
     padding: 0 0 0.5rem 0;
     font-weight: bold;
     font-size: 1.3rem;
+}
+@media screen and (max-width:480px){
+    .conteudo {
+        height: 100%;
+    }
+    .conteudo, .superior, .inferior {
+        width: 90%;
+        display: block;
+        margin: 2rem auto;
+    }
+    .superior {
+        border-radius: 20px;
+    }
+    .secao-b {
+        height: 30vh;
+        border-radius: 20px;
+        margin: 0 0 2rem 0;
+    }
+    .secao-c {
+        height: 34vh;
+    }
 }
